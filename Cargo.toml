@@ -1,0 +1,25 @@
+[package]
+name = "snilsgen"
+version = "0.1.0"
+edition = "2021"
+repository = "https://github.com/alturus/snilsgen"
+authors = ["Alexander Tukhanin <alexander.tukhanin@gmail.com>"]
+description = "A cli tool for generating random SNILS value"
+readme = "README.md"
+license = "MIT"
+keywords = ["cli", "snils"]
+
+[dependencies]
+copypasta-ext = "0.4.4"
+rand = "0.8.5"
+
+[profile.release]
+codegen-units = 1
+lto = true
+strip = true
+opt-level = 3
+panic = "abort"
+
+[[bin]]
+name = "snilsgen"
+path = "src/main.rs"
