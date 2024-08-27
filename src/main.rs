@@ -3,7 +3,7 @@ use copypasta_ext::x11_fork::ClipboardContext;
 use snilsgen::Snils;
 
 const COMMAND_NAME: &str = "snilsgen";
-const COMMAND_VERSION: &str = "0.1.0";
+const COMMAND_VERSION: &str = "0.1.1";
 
 fn help() {
     println!(

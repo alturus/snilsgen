@@ -44,7 +44,7 @@ fn init_snils_number() -> SnilsNumber {
 
         prev_digit = *d;
 
-        checksum += *d as u16 * i as u16;
+        checksum += *d as u16 * (i as u16 + 1);
     }
 
     checksum %= 101;
